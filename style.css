@@ -1,0 +1,120 @@
+*{
+  margin:0;
+  padding: 0;
+ 
+}
+body{
+  background-image: url(images/bg-desktop.svg) ;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  min-height: 100vh;
+  background-size: cover;
+}
+.container{
+  width:100%;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:90%;
+  margin:0 2rem;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.logo img{
+  padding-bottom: 20px;
+  width:190px;
+}
+.main{
+display: flex;
+align-items: center;
+gap:40px;
+}
+
+.main-text h1{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 36px;
+}
+.main-text p{
+  color: white;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+button{
+  font-family: 'Poppins', sans-serif;
+  border-radius: 25px;
+  display: inline-block;
+padding: 10px 2.5rem;
+color: hsl(257, 40%, 49%);
+text-decoration: none;
+
+font-size: 14px;
+box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
+transition: all 0.3s ease;
+}
+button:hover{
+  cursor: pointer;
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+}
+.social-media{
+  text-align: right;
+  bottom:20px;
+  right: 60px;
+gap: 20px 20px;
+}
+.social-media a i{
+  width:30px;
+  color:white;
+  height:30px;
+  border:2px solid white;
+  border-radius:50%;
+  line-height:30px;
+  text-align:center;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.social-media a:not(:first-child) {
+  margin-left: 1rem;
+}
+
+.social-media a i:hover{
+  cursor: pointer;
+color:hsl(300, 66%, 50%);
+  border-color:hsl(300, 66%, 50%);
+}
+@media only screen and (max-width: 1440px) {
+  .main-img img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    flex-direction: column;
+    text-align: center;
+   
+  }
+
+  .social-media {
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .main-text h1 {
+    line-height: 1.5;
+    font-size: 26px;
+  }
+
+  .main-text a {
+    padding: 10px 70px;
+  }
+}
